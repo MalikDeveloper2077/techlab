@@ -1,7 +1,7 @@
 from tortoise.models import Model
 from tortoise import fields
 
-from core.settings import get_settings
+from app.core.settings import get_settings
 
 
 class User(Model):

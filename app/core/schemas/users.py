@@ -1,7 +1,7 @@
 from pydantic import EmailStr
 from tortoise.contrib.pydantic import pydantic_model_creator
 
-from core.models.users import User
+from app.core.models.users import User
 
 
 UserBase_Pydantic = pydantic_model_creator(User, name='UserIn', exclude=('id', 'email',))

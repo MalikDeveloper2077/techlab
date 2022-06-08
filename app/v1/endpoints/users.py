@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 
-from core.models.users import User
-from core.schemas.users import UserPydantic, UserInPydantic
+from app.core.models.users import User
+from app.core.schemas.users import UserPydantic, UserInPydantic
 
 
 router = APIRouter()

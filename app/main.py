@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from tortoise.contrib.fastapi import register_tortoise
 
-from core.settings import get_settings
-from v1.api import router as v1_router
+from app.core.settings import get_settings
+from app.v1.api import router as v1_router
 
 
 app = FastAPI()
