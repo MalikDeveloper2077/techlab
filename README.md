@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 
 ### Для запуска сервера  
 ```
-uvicorn main:app --reload
+uvicorn app.main:app --reload
 ```  
   
 API доступен по адресу *localhost:8000/docs*
@@ -21,7 +21,7 @@ locust -f app/tests/v1/users_locust.py --headless --host http://localhost:8000 -
   
 *где:*  
 *--host* - url сервера для тестирования  
-*-u* количество пользователей  
-*-r* количество создаваемых пользователей в секунду  
-*-t* ограничение по времени (s/m/h)  
+*-u* - количество пользователей  
+*-r* - количество создаваемых пользователей в секунду  
+*-t* - ограничение по времени (s/m/h)  
   
